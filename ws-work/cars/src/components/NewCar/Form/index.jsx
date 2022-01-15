@@ -41,19 +41,30 @@ function Form() {
       num_portas: newCarForm.num_portas,
       valor_fipe: newCarForm.valor_fipe,
       cor: newCarForm.cor,
-      timestamp_cadastro: String(new Date().getTime()).substring(0, 10)
+      timestamp_cadastro: String(new Date().getTime()).substring(0, 10),
     };
-
-    axios
-      .post(API_URL, data)
-      .then((response) => {
-        alert("Carro adicionado com sucesso!");
-        window.location.reload();
-      })
-      .catch((error) => {
-        alert("Houve algum erro! :(");
-        console.log(error);
-      });
+    if (
+      data.marca_nome !== "" &&
+      data.nome_modelo !== "" &&
+      data.ano !== "" &&
+      data.combustivel !== "" &&
+      data.num_portas !== "" &&
+      data.valor_fipe !== "" &&
+      data.cor !== ""
+    ) {
+      axios
+        .post(API_URL, data)
+        .then((response) => {
+          alert("Carro adicionado com sucesso!");
+          window.location.reload();
+        })
+        .catch((error) => {
+          alert("Houve algum erro! :(");
+          console.log(error);
+        });
+    } else {
+      return alert("Há algo de errado");
+    }
   };
 
   return (
