@@ -12,6 +12,7 @@
 **Saiba mais** sobre cada um dos testes clicando sobre seus respectivos links abaixo 🔽
 
 - [**Ws-work**](https://github.com/dev-araujo/desafios/tree/main/ws-work)
+- [**Brlogic*](https://github.com/dev-araujo/desafios/tree/main/brlogic)
 
 
 
