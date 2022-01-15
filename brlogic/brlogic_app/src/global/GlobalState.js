@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import GlobalStateContext from "./GlobalStateContext";
 import axios from "axios";
 
@@ -8,18 +8,27 @@ const GlobalState = (props) => {
     about: "",
     episodes: [],
   });
+  const [podcast, setPodcast] = useState({
+    play: false,
+    about: [],
+    id: "",
+  });
 
-  const getInformation = () => {
+  const getInformation = useCallback(() => {
     axios.get(`${BASE_URL}details.json`).then((response) => {
-      setDataPodcast({ ...dataPodcast, episodes: response.data.episodes });
+      setDataPodcast({
+        ...dataPodcast,
+        episodes: response.data.episodes,
+        about: response.data.description,
+      });
     });
-  };
+  });
 
   useEffect(() => {
     getInformation();
-  }, []);
+  }, [setDataPodcast]);
 
-  const data = { dataPodcast };
+  const data = { dataPodcast, podcast, setPodcast };
   return (
     <GlobalStateContext.Provider value={data}>
       {props.children}
