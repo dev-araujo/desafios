@@ -6,18 +6,15 @@ import * as S from "./styles";
 
 function PodcastList() {
   const { dataPodcast, podcast, setPodcast } = useContext(GlobalStateContext);
-  
-  const openEpisode = (id) => {
-  
-    const BASE_URL = "https://api-frontend-test.brlogic.com/podcast/";
 
-    // setPodcast({ ...podcast, play: true });
+  const openEpisode = (id) => {
+    const BASE_URL = "https://api-frontend-test.brlogic.com/podcast/episodes/";
 
     if (id !== undefined) {
       return axios
-        .get(`${BASE_URL}episodes/${id}/details.json`)
+        .get(`${BASE_URL}${id}/details.json`)
         .then((response) => {
-          setPodcast({ ...podcast, about: response.data, play: true });
+          setPodcast({ ...podcast, about: response.data, play: !podcast.play });
         })
         .catch((error) => {
           console.log(error.message);
@@ -34,7 +31,10 @@ function PodcastList() {
             return (
               <S.Episode
                 key={ep.id}
-                onClick={()=>{openEpisode(ep.id)}}>
+                onClick={() => {
+                  openEpisode(ep.id);
+                }}
+              >
                 <img src={ep.cover} alt={ep.description} />
 
                 <article>

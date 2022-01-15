@@ -1,6 +1,12 @@
 import { useContext } from "react";
 import GlobalStateContext from "../global/GlobalStateContext";
-import { Header, About, PodcastDetails, PodcastList } from "../components";
+import {
+  Header,
+  About,
+  PodcastDetails,
+  PodcastList,
+  Player,
+} from "../components";
 import * as S from "./styles";
 
 function Layout() {
@@ -17,7 +23,10 @@ function Layout() {
             </S.Box>
           </>
         ) : (
-          <PodcastDetails />
+          <S.FooterCard>
+            <PodcastDetails />
+            <Player />
+          </S.FooterCard>
         )}
       </S.Card>
     </S.Container>
