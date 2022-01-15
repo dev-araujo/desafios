@@ -16,7 +16,6 @@ const About = () => {
         <span>{dataPodcast.about}</span>
       </S.AboutPodcast>
     </S.CardAbout>
-
   );
 };
 

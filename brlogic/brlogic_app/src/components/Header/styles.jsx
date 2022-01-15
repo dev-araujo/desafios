@@ -17,8 +17,8 @@ export const CardHeader = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  @media screen and (max-width: 380px) {
-    width: 375px;
+  @media screen and (max-width: 540px) {
+    width: 100%;
     height: 50%;
     background-size: 500px 332px;
     background-position: -3.5rem;

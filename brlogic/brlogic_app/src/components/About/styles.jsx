@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import { lightColorDefault } from "../../styles/colors";
+import * as Color from "../../styles/colors";
 import ShowMoreText from "react-show-more-text";
-
 
 export const CardAbout = styled.div`
   display: block;
   line-height: 0;
   opacity: 0.7;
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     display: none;
   }
 `;
@@ -29,6 +28,5 @@ export const ShowMoreLess = styled.div`
   margin-top: 8px;
   font-size: 14px;
   font-style: italic;
-  color: ${lightColorDefault};
+  color: ${Color.lightSecondary};
 `;
-

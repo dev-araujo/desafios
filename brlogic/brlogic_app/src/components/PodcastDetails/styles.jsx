@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import {
-  playerColor,
-  lightColorSecondary,
-  lightColorDefault,
-} from "../../styles/colors";
+import * as Color from "../../styles/colors";
+
 import ShowMoreText from "react-show-more-text";
 
 export const BoxContainerDetails = styled.div`
@@ -11,18 +8,54 @@ export const BoxContainerDetails = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media screen and (max-width: 380px) {
+
+  @media screen and (max-width: 540px) {
     height: 666px;
     width: 100vw;
   }
 `;
-
+export const BoxTitle = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    padding-left: 3rem;
+  }
+  span {
+    margin-right: 1rem;
+    background: ${Color.dark};
+    padding: 6px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 540px) {
+    flex-direction: column-reverse;
+    h1 {
+      padding-left: 0;
+      text-align: center;
+    }
+    span {
+      margin-top: 0.5rem;
+      align-self: end;
+    }
+  }
+`;
 export const BoxHeader = styled.div`
+  margin-top: -1rem;
+  height: 420px;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 380px) {
+  align-items: flex-start;
+
+  @media screen and (max-width: 540px) {
     flex-direction: column;
-    height: 543px;
+    justify-content: flex-start;
+    height: 560px;
   }
 `;
 
@@ -34,7 +67,7 @@ export const BoxImage = styled.div`
     padding: 2rem;
     border-radius: 15%;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     img {
       width: 375px;
       height: 264px;
@@ -53,12 +86,15 @@ export const BoxTextRight = styled.div`
     font-style: italic;
     opacity: 0.5;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     width: 330px;
     height: 280px;
     text-align: left;
     h1 {
       font-size: 14px;
+    }
+    h6 {
+      margin-top: 15px;
     }
   }
 `;
@@ -69,110 +105,16 @@ export const AboutPodcast = styled(ShowMoreText)`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media screen and (max-width: 540px) {
+    max-height: 50px;
+    min-height: 50px;
+  }
 `;
 export const ShowMoreLess = styled.p`
   margin-top: 0;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
-  color: ${lightColorDefault};
-`;
-
-export const PlayerBox = styled.div`
-  height: 200px;
-  width: 768px;
-
-  .rhap_container {
-    background: ${playerColor};
-    height: 100px;
-    border-bottom-right-radius: 3%;
-    border-bottom-left-radius: 3%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .rhap_main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .rhap_main-controls {
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .rhap_progress-section {
-    width: 500px;
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1rem;
-  }
-
-  .rhap_progress-bar,
-  .rhap_progress-bar-show-download {
-    background: ${lightColorSecondary};
-    width: 400px !important;
-    height: 4px;
-    opacity: 0.3;
-  }
-
-  .rhap_time {
-    color: white;
-    opacity: 0.5;
-  }
-
-  .rhap_repeat-button,
-  .rhap_volume-container {
-    display: none;
-  }
-  .rhap_play-pause-button {
-    font-size: 64px;
-    width: 54px;
-    height: 54px;
-    border-radius: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .rhap_play-pause-button path {
-    fill: ${lightColorSecondary};
-  }
-  .rhap_skip-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: white;
-    color: ${lightColorSecondary};
-  }
-  .rhap_forward-button {
-    margin-left: 0.5rem;
-  }
-  .rhap_rewind-button {
-    margin-right: 0.5rem;
-  }
-  @media screen and (max-width: 380px) {
-    width: 375px;
-    height: 220px;
-    background: ${playerColor};
-    .rhap_time {
-      font-size: 12px;
-    }
-    .rhap_stacked {
-      width: 320px;
-      height: 220px;
-      padding: 0.5rem;
-      padding-bottom: 1.5rem;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
+  color: ${Color.lightSecondary};
 `;

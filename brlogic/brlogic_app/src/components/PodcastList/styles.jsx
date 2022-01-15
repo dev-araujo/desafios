@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const CardBoxList = styled.div`
   margin-top: -1rem;
   h6 {
@@ -8,7 +7,7 @@ export const CardBoxList = styled.div`
     opacity: 0.5;
     letter-spacing: 0.46em;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     height: 300px;
@@ -21,7 +20,7 @@ export const CardList = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     height: 268px;
   }
 `;
@@ -50,7 +49,7 @@ export const Episode = styled.div`
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     width: 320px;
     height: 94px;
     margin-bottom: 0;
