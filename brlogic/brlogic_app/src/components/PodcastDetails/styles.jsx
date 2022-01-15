@@ -9,7 +9,7 @@ export const BoxContainerDetails = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     height: 666px;
     width: 100vw;
   }
@@ -33,16 +33,29 @@ export const BoxTitle = styled.section`
     align-items: center;
     cursor: pointer;
   }
+  @media screen and (max-width: 540px) {
+    flex-direction: column-reverse;
+    h1 {
+      padding-left: 0;
+      text-align: center;
+    }
+    span {
+      margin-top: 0.5rem;
+      align-self: end;
+    }
+  }
 `;
 export const BoxHeader = styled.div`
+  margin-top: -1rem;
   height: 420px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     flex-direction: column;
-    height: 543px;
+    justify-content: flex-start;
+    height: 560px;
   }
 `;
 
@@ -54,7 +67,7 @@ export const BoxImage = styled.div`
     padding: 2rem;
     border-radius: 15%;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     img {
       width: 375px;
       height: 264px;
@@ -73,12 +86,15 @@ export const BoxTextRight = styled.div`
     font-style: italic;
     opacity: 0.5;
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     width: 330px;
     height: 280px;
     text-align: left;
     h1 {
       font-size: 14px;
+    }
+    h6 {
+      margin-top: 15px;
     }
   }
 `;
@@ -88,6 +104,11 @@ export const AboutPodcast = styled(ShowMoreText)`
   overflow: auto;
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media screen and (max-width: 540px) {
+    max-height: 50px;
+    min-height: 50px;
   }
 `;
 export const ShowMoreLess = styled.p`

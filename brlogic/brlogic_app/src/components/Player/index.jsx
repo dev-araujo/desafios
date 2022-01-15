@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import GlobalStateContext from "./../../global/GlobalStateContext";
+import { api_getRandomPodcast } from "../../services/api";
 import { previousPodcast, nextPodcast } from "../../utils/playerControls";
-import axios from "axios";
 import AudioPlayer from "react-h5-audio-player";
 import * as S from "./styles";
 
@@ -12,19 +12,6 @@ function Player() {
     return ep.id;
   });
 
-  const getRandomPodcast = (id) => {
-    const BASE_URL = "https://api-frontend-test.brlogic.com/podcast/episodes/";
-
-    axios
-      .get(`${BASE_URL}${id}/details.json`)
-      .then((response) => {
-        setPodcast({ ...podcast, about: response.data });
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
-  };
-
   return (
     <S.PlayerBox>
       <AudioPlayer
@@ -32,11 +19,17 @@ function Player() {
         onPlay={() => console.log("play works")}
         showSkipControls={true}
         onClickNext={() =>
-          getRandomPodcast(nextPodcast(idList, podcast.about.episodeNumber - 1))
+          api_getRandomPodcast(
+            nextPodcast(idList, podcast.about.episodeNumber - 1),
+            setPodcast,
+            podcast
+          )
         }
         onClickPrevious={() =>
-          getRandomPodcast(
-            previousPodcast(idList, podcast.about.episodeNumber - 1)
+          api_getRandomPodcast(
+            previousPodcast(idList, podcast.about.episodeNumber - 1),
+            setPodcast,
+            podcast
           )
         }
         showJumpControls={false}

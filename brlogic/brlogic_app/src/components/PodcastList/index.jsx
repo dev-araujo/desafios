@@ -1,26 +1,11 @@
 import { useContext } from "react";
 import GlobalStateContext from "../../global/GlobalStateContext";
+import { api_getOpenEpisode } from "../../services/api";
 import convertHours from "../../utils/convertHours";
-import axios from "axios";
 import * as S from "./styles";
 
 function PodcastList() {
   const { dataPodcast, podcast, setPodcast } = useContext(GlobalStateContext);
-
-  const openEpisode = (id) => {
-    const BASE_URL = "https://api-frontend-test.brlogic.com/podcast/episodes/";
-
-    if (id !== undefined) {
-      return axios
-        .get(`${BASE_URL}${id}/details.json`)
-        .then((response) => {
-          setPodcast({ ...podcast, about: response.data, play: !podcast.play });
-        })
-        .catch((error) => {
-          console.log(error.message);
-        });
-    }
-  };
 
   return (
     <S.CardBoxList>
@@ -32,7 +17,7 @@ function PodcastList() {
               <S.Episode
                 key={ep.id}
                 onClick={() => {
-                  openEpisode(ep.id);
+                  api_getOpenEpisode(ep.id, setPodcast, podcast);
                 }}
               >
                 <img src={ep.cover} alt={ep.description} />

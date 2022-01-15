@@ -10,6 +10,7 @@ export const Container = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+  
 `;
 export const Card = styled.section`
   width: 768px;
@@ -19,19 +20,21 @@ export const Card = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     flex-direction: column;
     align-items: center;
     width: 100vw;
     height: 100vh;
     border-radius: 0;
+    margin-top:-4px;
+
   }
 `;
 
 export const Box = styled.div`
   width: 453px;
   padding: 1rem;
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
     padding: 0;
     width: 100vw;
   }

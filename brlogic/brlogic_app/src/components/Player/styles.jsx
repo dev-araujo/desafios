@@ -73,7 +73,7 @@ export const PlayerBox = styled.div`
   }
   .rhap_play-pause-button path {
     fill: ${Color.lightSecondary};
-    cursor:pointer;
+    cursor: pointer;
   }
   .rhap_skip-button {
     display: flex;
@@ -86,30 +86,56 @@ export const PlayerBox = styled.div`
     background: white;
     color: ${Color.lightSecondary};
     border: none;
-    cursor:pointer;
+    cursor: pointer;
   }
   .rhap_forward-button {
     margin-left: 0.5rem;
   }
   .rhap_rewind-button {
     margin-right: 0.5rem;
-   
-
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 540px) {
+    min-height: 200px;
     width: 375px;
-    height: 220px;
+    margin-top: -8rem;
     background: ${Color.player};
+    display: flex;
+    justify-content: center;
+
     .rhap_time {
       font-size: 12px;
     }
+
     .rhap_stacked {
-      width: 320px;
-      height: 220px;
-      padding: 0.5rem;
-      padding-bottom: 1.5rem;
       flex-direction: column;
+      align-items: center;
+    }
+
+    .rhap_main-controls,
+    .rhap_progress-section {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    .rhap_progress-section {
+      margin-top: 1rem;
+
+      display: flex;
       justify-content: center;
+      align-items: center;
+    }
+
+    .rhap_total-time {
+      margin-right: 1rem;
+      margin-left: 0.5rem;
+    }
+    .rhap_current-time {
+      margin-left: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    .rhap_progress-indicator {
+      max-width: 280px;
     }
   }
 `;
