@@ -95,9 +95,9 @@ export const PlayerBox = styled.div`
     margin-right: 0.5rem;
   }
   @media screen and (max-width: 540px) {
+    margin-top:-8rem;
     min-height: 200px;
     width: 375px;
-    margin-top: -8rem;
     background: ${Color.player};
     display: flex;
     justify-content: center;
