@@ -10,7 +10,7 @@ function PodcastDetails() {
   return (
     <S.BoxContainerDetails>
       <S.BoxTitle>
-        <h1>{podcast.about.name}</h1>{" "}
+        <h1>{podcast.about.name}</h1>
         <span onClick={() => setPodcast({ ...podcast, play: !podcast.play })}>
           X
         </span>
@@ -25,13 +25,15 @@ function PodcastDetails() {
             Episódio {podcast.about.episodeNumber} - {podcast.about.name}
           </h1>
           <S.AboutPodcast
-            lines={4}
+            expanded={false}
+            lines={6}
             more={<S.ShowMoreLess>Ler mais </S.ShowMoreLess>}
             less={<S.ShowMoreLess>Ler menos</S.ShowMoreLess>}
-            expanded={false}
           >
-            <p>{podcast.about.description}</p>
+                      <p>{podcast.about.description}</p>
+
           </S.AboutPodcast>
+
           <h6>
             Participantes: {participantsSeparation(podcast.about.participants)}
           </h6>

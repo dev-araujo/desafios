@@ -12,6 +12,7 @@ export const BoxContainerDetails = styled.div`
   @media screen and (max-width: 540px) {
     height: 666px;
     width: 100vw;
+    justify-content: flex-start;
   }
 `;
 export const BoxTitle = styled.section`
@@ -36,17 +37,17 @@ export const BoxTitle = styled.section`
   @media screen and (max-width: 540px) {
     flex-direction: column-reverse;
     h1 {
-      padding-left: 0;
-      text-align: center;
+      display: none;
     }
     span {
+      position: fixed;
+      top: 0;
       margin-top: 0.5rem;
       align-self: end;
     }
   }
 `;
 export const BoxHeader = styled.div`
-  margin-top: -1rem;
   height: 420px;
   display: flex;
   justify-content: center;
@@ -61,6 +62,7 @@ export const BoxHeader = styled.div`
 
 export const BoxImage = styled.div`
   width: 277px;
+
   img {
     width: 250px;
     height: 250px;
@@ -68,6 +70,7 @@ export const BoxImage = styled.div`
     border-radius: 15%;
   }
   @media screen and (max-width: 540px) {
+    width: 100%;
     img {
       width: 375px;
       height: 264px;
@@ -79,7 +82,7 @@ export const BoxImage = styled.div`
 
 export const BoxTextRight = styled.div`
   width: 440px;
-  height: 240px;
+  height: 250px;
   padding: 1rem;
   h6 {
     font-size: 11px;
@@ -100,20 +103,27 @@ export const BoxTextRight = styled.div`
 `;
 
 export const AboutPodcast = styled(ShowMoreText)`
-  height: 120px;
+  
+  margin-top:-8px;
+  max-height:140px;
   overflow: auto;
   &::-webkit-scrollbar {
     display: none;
+
   }
 
   @media screen and (max-width: 540px) {
-    max-height: 50px;
-    min-height: 50px;
+    height:20rem;
+    margin-top:0px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
   }
 `;
 export const ShowMoreLess = styled.p`
   margin-top: 0;
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
   font-weight: 600;
   color: ${Color.lightSecondary};

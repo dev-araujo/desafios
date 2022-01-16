@@ -40,7 +40,9 @@ export const Box = styled.div`
   }
 `;
 
-export const FooterCard = styled.footer`
+export const PlayerCard = styled.footer`
   display: flex;
   flex-direction: column;
+
+ 
 `;

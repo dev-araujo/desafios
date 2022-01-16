@@ -23,10 +23,10 @@ function Layout() {
             </S.Box>
           </>
         ) : (
-          <S.FooterCard>
+          <S.PlayerCard>
             <PodcastDetails />
             <Player />
-          </S.FooterCard>
+          </S.PlayerCard>
         )}
       </S.Card>
     </S.Container>
