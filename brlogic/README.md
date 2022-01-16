@@ -18,7 +18,7 @@
 <h1 align="center">
   
 ![2](https://user-images.githubusercontent.com/97068163/149625085-1fc6c49c-c14b-45ac-aebf-eb3e71699d75.png)
-![1](https://user-images.githubusercontent.com/97068163/149625084-1afef759-b019-4a90-9349-6413379c14c0.png)
+![playmobile](https://user-images.githubusercontent.com/97068163/149659841-cfe5b079-654e-461f-b648-f94f2ab60846.png)
 
 
   </h1>
