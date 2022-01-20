@@ -1,4 +1,4 @@
-import Routes from "./Routes";
+import PagesPaths from "./routes/routes";
 import GlobalState from "./context/GlobalState";
 /*
 {	"email": "sense@data.com",
@@ -8,7 +8,7 @@ import GlobalState from "./context/GlobalState";
 function App() {
   return (
     <GlobalState>
-      <Routes />
+      <PagesPaths />
     </GlobalState>
   );
 }

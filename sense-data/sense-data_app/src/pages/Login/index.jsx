@@ -1,7 +1,7 @@
-import React from "react";
+import LoginView from "../../layout/LoginView";
 
 function Login() {
-  return <div>Login</div>;
+  return <LoginView />;
 }
 
 export default Login;
