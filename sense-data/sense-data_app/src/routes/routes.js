@@ -1,17 +1,17 @@
-import { Routes as Router, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Login from "../pages/Login";
 import Home from "../pages/Home";
 import Error from "../pages/Error";
 
-const Routes = () => {
+const PagesPaths = () => {
   return (
-    <HashRouter>
-      <Router>
+    <BrowserRouter>
+      <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<Error />} />
-      </Router>
-    </HashRouter>
+      </Routes>
+    </BrowserRouter>
   );
 };
-export default Routes;
+export default PagesPaths;

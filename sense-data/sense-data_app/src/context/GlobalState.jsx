@@ -1,12 +1,21 @@
-import { useState, useEffect } from "react";
-import GlobalStateContext from "./GlobalStateContext";
+import React, { createContext, useState } from "react";
 
-const GlobalState = (props) => {
-  const data = {};
+export const GlobalStateContext = createContext();
+
+export default function GlobalState({ children }) {
+  const [login, setLogin] = useState({
+    email: "",
+    password: "",
+  });
+
+  const data = {
+    login,
+    setLogin,
+  };
+
   return (
     <GlobalStateContext.Provider value={data}>
-      {props.children}
+      {children}
     </GlobalStateContext.Provider>
   );
-};
-export default GlobalState;
+}
