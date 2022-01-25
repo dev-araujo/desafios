@@ -46,7 +46,7 @@ git clone
 
 Entre na pasta do projeto:
 ```
-cd brlogic_app
+cd brlogic/brlogic_app
 ```
 
 Instale as dependências:
