@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import WallpaperLogin from "../../assets/wallpaper_login.jpg";
+import { WallpaperLogin } from "../../styles/images";
 
 export const Container = styled.main`
   width: 100vw;

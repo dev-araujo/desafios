@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { GlobalStateContext } from "../../context/GlobalState";
 import { userLogin } from "../../services/authentication";
-import SenseDataIcon from "../../assets/logo_sensedata.png";
+import {Logo} from "../../styles/images";
 
 import * as S from "./styles";
 
@@ -16,7 +16,7 @@ const SignIn = () => {
 
   return (
     <S.FormContainer onSubmit={send}>
-      <img src={SenseDataIcon} alt={"senseData icon"} />
+      <img src={Logo} alt={"senseData icon"} />
 
       <S.Input
         fullWidth
