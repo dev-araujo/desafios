@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
-import TextField from "@material-ui/core/TextField";
+import {TextField} from "../../styles/material-ui";
 
 export const Input = styled(TextField)`
   max-width: 340px;
@@ -18,10 +18,10 @@ export const FormContainer = styled.form`
   img {
     margin-bottom: 2rem;
   }
-  h1 {
+  /* h1 {
     color: ${colors.colorToGradient};
     font-weight: bolder;
-  }
+  } */
 `;
 
 export const LoginButton = styled.button`

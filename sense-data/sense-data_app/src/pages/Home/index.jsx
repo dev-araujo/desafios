@@ -1,5 +1,9 @@
+import { HomeView } from "../../layout/index";
+import useProtectPage from './../../hooks/useProtectPage';
+
 function Home() {
-  return <div>home</div>;
+  useProtectPage();
+  return <HomeView />;
 }
 
 export default Home;
