@@ -1,8 +1,9 @@
 import axios from "axios";
 import { goToInitial } from "../routes/coordinator";
+import {Auth} from './urls'
 
 export const authentication = (data, navigate) => {
-  const Auth = "https://auth.dev-araujo.repl.co/auth/login";
+  
   axios
     .post(`${Auth}`, data)
     .then((response) => {

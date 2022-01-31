@@ -1,0 +1,33 @@
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 54.375rem) {
+    width: 100%;
+  }
+  img {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    max-width: 21.25rem;
+  }
+  &__button {
+    width: 21.25rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2%;
+    background: var(--primary-button-color);
+    color: var(--white-color);
+    font-weight: bolder;
+    &:hover {
+      background: var(--secondary-button-color);
+    }
+  }
+}
