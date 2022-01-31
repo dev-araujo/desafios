@@ -1,5 +1,7 @@
+import { ErrorLayout } from "../../layout/index";
+
 function Error() {
-  return <div>Error</div>;
+  return <ErrorLayout />;
 }
 
 export default Error;

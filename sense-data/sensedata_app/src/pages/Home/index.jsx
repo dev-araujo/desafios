@@ -1,6 +1,8 @@
-import "./styles.scss"
+import { HomeLayout } from "../../layout/index";
+import useProtectedPage from "../../hooks/useProtectedPage";
 function Home() {
-  return <div>Home</div>;
+  useProtectedPage();
+  return <HomeLayout />;
 }
 
 export default Home;

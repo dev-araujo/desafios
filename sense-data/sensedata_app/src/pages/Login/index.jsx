@@ -1,6 +1,7 @@
+import { LoginLayout } from "../../layout/index";
 
 function Login() {
-  return <div>login</div>;
+  return <LoginLayout />;
 }
 
 export default Login;
