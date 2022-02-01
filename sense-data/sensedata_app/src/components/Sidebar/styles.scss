@@ -1,0 +1,64 @@
+.sidebar {
+  background: var(--white-color);
+  width: 16vw;
+  height: 92vh;
+
+  border-radius: 1%;
+  margin: 1rem 0 0 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+    background: var(--background-figure);
+    border-radius: 0.25rem;
+  }
+
+  &__menu {
+    padding: 2rem 0 0 1.5rem;
+
+    ul {
+      margin-top: 4rem;
+      height: 10rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      li {
+        display: flex;
+        align-items: center;
+
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 0.7rem 0.7rem 0.7rem 0;
+      }
+    }
+  }
+  &__icon {
+    margin-right: 0.5rem;
+  }
+  &__line {
+    width: 100%;
+    border-bottom: 1px solid var(--background-default);
+    margin-top: 6rem;
+  }
+
+  // options
+  
+
+  // dinamic
+  .inactive {
+    color: var(--text-light);
+  }
+  .active {
+    background: var(--hover-text);
+    color: var(--text-selected);
+  }
+}

@@ -1,6 +1,14 @@
-import "./styles.scss"
+import { Sidebar, Header, Content } from "../../components";
+import "./styles.scss";
+
 function HomeLayout() {
-  return <div>HomeLayout</div>;
+  return (
+    <main>
+      <Sidebar />
+      {/* <Header />
+      <Content /> */}
+    </main>
+  );
 }
 
 export default HomeLayout;

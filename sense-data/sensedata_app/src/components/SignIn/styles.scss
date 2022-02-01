@@ -1,13 +1,13 @@
 
 .form {
-  display: flex;
-  flex-direction: column;
-
   width: 40vw;
+  background:var(--white-color);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   @media (max-width: 54.375rem) {
     width: 100%;
   }
