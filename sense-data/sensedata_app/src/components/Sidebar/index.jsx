@@ -51,7 +51,7 @@ function Sidebar() {
   return (
     <section className={"sidebar"}>
       <section className={"sidebar__menu"}>
-        <img src={LogoMenu} className={'sidebar__logo'} alt={"logo"} />
+        <img src={LogoMenu} className={"sidebar__logo"} alt={"logo"} />
 
         <ul>
           <li onClick={activeDashboard} className={active.dashboard}>

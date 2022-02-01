@@ -21,8 +21,12 @@
     border-radius: 0.25rem;
   }
 
+  &__menu, &__options{
+     padding: 2rem 0 0 1.5rem;
+  }
+
   &__menu {
-    padding: 2rem 0 0 1.5rem;
+   
 
     ul {
       margin-top: 4rem;

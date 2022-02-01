@@ -1,1 +1,1 @@
-export const Auth = "https://auth.dev-araujo.repl.co/auth/login";
+export const Auth = "https://fake-auth-server.herokuapp.com/auth/login";

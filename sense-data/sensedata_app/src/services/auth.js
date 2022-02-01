@@ -7,10 +7,10 @@ export const authentication = (data, navigate) => {
     .post(`${Auth}`, data)
     .then((response) => {
       localStorage.setItem("access_token", response.data.access_token);
-       goToInitial(navigate);
+      goToInitial(navigate);
     })
-    .catch(() => {
-      alert("algo inesperado ocorreu");
+    .catch((error) => {
+      console.log(error);
     });
 };
 
@@ -27,10 +27,7 @@ export const userLogin = (event, history, state) => {
     password: state.password,
   };
 
-  try {
-    authentication(body, history);
-    event.preventDefault();
-  } catch(error) {
-    console.log(error)
-  }
+ authentication(body, history);
+  event.preventDefault();
+
 };
