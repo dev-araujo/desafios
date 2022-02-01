@@ -8,9 +8,18 @@ export default function GlobalState({ children }) {
     password: "",
   });
 
+  const [active, setActive] = useState({
+    dashboard: "inactive",
+    new: "inactive",
+    list: "inactive",
+    card: "inactive",
+  });
+
   const data = {
     login,
     setLogin,
+    active,
+    setActive,
   };
 
   return (
