@@ -13,6 +13,7 @@
 
 - [**Ws-work**](https://github.com/dev-araujo/desafios/tree/main/ws-work)
 - [**Brlogic**](https://github.com/dev-araujo/desafios/tree/main/brlogic)
+- [**Rh Software**](https://github.com/dev-araujo/tarot)
 
 
 
