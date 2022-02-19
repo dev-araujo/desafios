@@ -11,9 +11,20 @@
 
 **Saiba mais** sobre cada um dos testes clicando sobre seus respectivos links abaixo 🔽
 
+
+**<details><summary>Testes React ⚛️</summary>**
+
 - [**Ws-work**](https://github.com/dev-araujo/desafios/tree/main/ws-work)
 - [**Brlogic**](https://github.com/dev-araujo/desafios/tree/main/brlogic)
-- [**Rh Software**](https://github.com/dev-araujo/tarot)
+
+</details>
+
+
+**<details><summary>Testes Angular 🅰️ </summary>**
+  
+  - [**Rh Software**](https://github.com/dev-araujo/tarot)
+  
+  </details>
 
 
 
