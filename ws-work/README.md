@@ -43,7 +43,7 @@ git clone
 
 Entre na pasta do projeto:
 ```
-cd cars
+cd ws-work/cars
 ```
 
 Instale as dependências:
