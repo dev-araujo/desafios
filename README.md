@@ -13,8 +13,8 @@
 
 **<details><summary>Testes React ⚛️</summary>**
 
-- [**Ws-work**](https://github.com/dev-araujo/desafios/tree/main/ws-work)
-- [**Brlogic**](https://github.com/dev-araujo/desafios/tree/main/brlogic)
+- [**Ws-work**](https://github.com/dev-araujo/desafios/tree/main/React/ws-work)
+- [**Brlogic**](https://github.com/dev-araujo/desafios/tree/main/React/brlogic)
 
 </details>
 
