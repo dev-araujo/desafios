@@ -11,7 +11,6 @@
 - [x] A possibilidade de filtrar a lista de acordo com a marca
 
 
-
 ### 🎨 Resultado 
 
 - O resultado pode ser conferido :arrow_right: [**AQUI**](https://ws-work.dev-araujo.repl.co/)
@@ -24,7 +23,7 @@
 </h1>
 
 
-## 🔨Feito com 
+## 🔨 Feito com 
 - **React JS**
   - Hooks
   - Context-Api
