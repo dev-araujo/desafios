@@ -6,6 +6,15 @@
 **Saiba mais** sobre cada um dos testes clicando sobre seus respectivos links abaixo 🔽
 
 
+**<details><summary>Testes Vanilla 🍦 </summary>**
+  
+  - [**Survey Form FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/survey-form)
+  - [**Tribute Page - Hermann Hesse, FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/tribute-page)
+  - [**Personal Portfolio Webpage**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/personal-portfolio-webpage)
+  
+  </details>
+  
+  
 **<details><summary>Testes React ⚛️</summary>**
 
 - [**Ws-work**](https://github.com/dev-araujo/desafios/tree/main/React/ws-work)
