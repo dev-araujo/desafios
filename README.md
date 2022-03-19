@@ -8,7 +8,7 @@
 
 **<details><summary>Testes Vanilla 🍦 </summary>**
   
-  - [**Technical Documentation Page, FreeCodeCamp **](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/technical-documentation-page)
+  - [**Technical Documentation Page, FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/technical-documentation-page)
   - [**Survey Form FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/survey-form)
   - [**Tribute Page - Hermann Hesse, FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/tribute-page)
   - [**Personal Portfolio Webpage**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/personal-portfolio-webpage)
