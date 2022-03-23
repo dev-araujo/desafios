@@ -8,6 +8,7 @@
 
 **<details><summary>Testes Vanilla 🍦 </summary>**
   
+  - [**Product Landing Page,FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/product-landing-page)
   - [**Technical Documentation Page, FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/technical-documentation-page)
   - [**Survey Form FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/survey-form)
   - [**Tribute Page - Hermann Hesse, FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Responsive-Web-Design/tribute-page)
