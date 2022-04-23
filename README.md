@@ -21,6 +21,7 @@
 
 - [**Ws-work**](https://github.com/dev-araujo/desafios/tree/main/React/ws-work)
 - [**Brlogic**](https://github.com/dev-araujo/desafios/tree/main/React/brlogic)
+- [**Random Quotes Machine,FreeCodeCamp**](https://github.com/dev-araujo/FreeCodeCamp/tree/main/Frontend-Development-Libraries/random-quote-machine)
 
 </details>
 
